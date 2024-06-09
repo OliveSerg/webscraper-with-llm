@@ -1,0 +1,11 @@
+fastapi==0.111.0
+fastapi-cli==0.0.4
+langchain==0.2.3
+langchain-community==0.2.4
+langchain-core==0.2.5
+langchain-experimental==0.0.60
+langchain-text-splitters==0.2.1
+pydantic_settings==2.3.1
+python-dotenv==1.0.1
+requests==2.32.3
+SQLAlchemy==2.0.30
