@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     ALLOWED_HOSTS: list[str] = ["*"]
     DATABASE_URL: str
     MODEL_BASE_URL: str
+    LLM_MODEL_NAME: str
 
     # Use seperate settings for LLMs to use as interface
     model_config = SettingsConfigDict(env_file=".env")

@@ -12,7 +12,11 @@ class BaseSchema(LangBaseModel):
 
 class Activity(BaseSchema):
     """Information about an activity."""
-    name: Optional[str] = Field(default=None, description="The name of the activity")
-    summary: Optional[str] = Field(default=None, description="A summary about the activity")
-    child_safe: Optional[bool] = Field(default=None, description="Is the activity safe for a child under 8 years old")
     
+    name: Optional[str] = Field(description="The name of the activity")
+    summary: Optional[str] = Field(description="A summary about the activity")
+    child_safe: Optional[bool] = Field(default=None, description="Is the activity safe for a child under 8 years old")
+
+class Activities(BaseSchema):
+    """Extracted data about activities."""
+    activities: List[Activity]
